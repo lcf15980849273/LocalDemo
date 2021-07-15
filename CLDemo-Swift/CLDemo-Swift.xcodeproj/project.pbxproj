@@ -65,6 +65,9 @@
 		5B79829C26A00A35004A6473 /* CLChangeFontSizeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B79829B26A00A35004A6473 /* CLChangeFontSizeController.swift */; };
 		5B79829F26A00B34004A6473 /* CLSubsectionSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B79829E26A00B34004A6473 /* CLSubsectionSlider.swift */; };
 		5B7982A126A014DE004A6473 /* CLCalculateHepler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7982A026A014DE004A6473 /* CLCalculateHepler.swift */; };
+		5B7982A426A01ECA004A6473 /* CLDarkModeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7982A326A01ECA004A6473 /* CLDarkModeController.swift */; };
+		5B7982A726A02265004A6473 /* CLTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7982A626A02265004A6473 /* CLTheme.swift */; };
+		5B7982A926A022BF004A6473 /* CLUserDefaultStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7982A826A022BF004A6473 /* CLUserDefaultStorage.swift */; };
 		5B80042326818C79000E39AC /* UISpringTimingParameters+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B80042226818C79000E39AC /* UISpringTimingParameters+Extension.swift */; };
 		5B80042526818DD0000E39AC /* CLTwoSidedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B80042426818DD0000E39AC /* CLTwoSidedView.swift */; };
 		5B80042726818E05000E39AC /* CLNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B80042626818E05000E39AC /* CLNavigationController.swift */; };
@@ -172,7 +175,6 @@
 		5BD4EB19268184AB00B5284F /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD4EB00268184AB00B5284F /* UIView+Extension.swift */; };
 		5BD4EB1A268184AB00B5284F /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD4EB01268184AB00B5284F /* UIImage+Extension.swift */; };
 		5BD4EB1B268184AB00B5284F /* UIControl+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD4EB02268184AB00B5284F /* UIControl+Extension.swift */; };
-		5BD4EB1C268184AB00B5284F /* CKDNamespace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD4EB03268184AB00B5284F /* CKDNamespace.swift */; };
 		5BD4EB1D268184AB00B5284F /* NSDecimalNumber+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD4EB04268184AB00B5284F /* NSDecimalNumber+Extension.swift */; };
 		5BD4EB1E268184AB00B5284F /* URL+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD4EB05268184AB00B5284F /* URL+Extension.swift */; };
 		5BD4EB1F268184AB00B5284F /* AutoScale+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD4EB06268184AB00B5284F /* AutoScale+Extension.swift */; };
@@ -307,6 +309,9 @@
 		5B79829B26A00A35004A6473 /* CLChangeFontSizeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLChangeFontSizeController.swift; sourceTree = "<group>"; };
 		5B79829E26A00B34004A6473 /* CLSubsectionSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLSubsectionSlider.swift; sourceTree = "<group>"; };
 		5B7982A026A014DE004A6473 /* CLCalculateHepler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLCalculateHepler.swift; sourceTree = "<group>"; };
+		5B7982A326A01ECA004A6473 /* CLDarkModeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLDarkModeController.swift; sourceTree = "<group>"; };
+		5B7982A626A02265004A6473 /* CLTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLTheme.swift; sourceTree = "<group>"; };
+		5B7982A826A022BF004A6473 /* CLUserDefaultStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLUserDefaultStorage.swift; sourceTree = "<group>"; };
 		5B80042226818C79000E39AC /* UISpringTimingParameters+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISpringTimingParameters+Extension.swift"; sourceTree = "<group>"; };
 		5B80042426818DD0000E39AC /* CLTwoSidedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLTwoSidedView.swift; sourceTree = "<group>"; };
 		5B80042626818E05000E39AC /* CLNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLNavigationController.swift; sourceTree = "<group>"; };
@@ -417,7 +422,6 @@
 		5BD4EB00268184AB00B5284F /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		5BD4EB01268184AB00B5284F /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		5BD4EB02268184AB00B5284F /* UIControl+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIControl+Extension.swift"; sourceTree = "<group>"; };
-		5BD4EB03268184AB00B5284F /* CKDNamespace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CKDNamespace.swift; sourceTree = "<group>"; };
 		5BD4EB04268184AB00B5284F /* NSDecimalNumber+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDecimalNumber+Extension.swift"; sourceTree = "<group>"; };
 		5BD4EB05268184AB00B5284F /* URL+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+Extension.swift"; sourceTree = "<group>"; };
 		5BD4EB06268184AB00B5284F /* AutoScale+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AutoScale+Extension.swift"; sourceTree = "<group>"; };
@@ -509,12 +513,12 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		5B08E44B2681E682001C271A /* CLBundleManager */ = {
+		5B08E44B2681E682001C271A /* CLLanguageManager */ = {
 			isa = PBXGroup;
 			children = (
 				5B08E44C2681E6A7001C271A /* CLLanguageManager.swift */,
 			);
-			path = CLBundleManager;
+			path = CLLanguageManager;
 			sourceTree = "<group>";
 		};
 		5B1C366C26841FAF00D777EB /* CLPermissions */ = {
@@ -556,6 +560,7 @@
 				5B800438268194FD000E39AC /* CLTableView */,
 				5BD4EB7926818A1300B5284F /* CLLogManager */,
 				5BD4EB2F268185A900B5284F /* CLFontManager */,
+				5B7982A526A02256004A6473 /* CLTheme */,
 				5B8004342681948A000E39AC /* Class */,
 				5B4895FB268097510046AF31 /* Main.storyboard */,
 				5B4895FE268097520046AF31 /* Assets.xcassets */,
@@ -855,12 +860,29 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		5B7982A226A01EAE004A6473 /* CLDarkModeController */ = {
+			isa = PBXGroup;
+			children = (
+				5B7982A326A01ECA004A6473 /* CLDarkModeController.swift */,
+			);
+			path = CLDarkModeController;
+			sourceTree = "<group>";
+		};
+		5B7982A526A02256004A6473 /* CLTheme */ = {
+			isa = PBXGroup;
+			children = (
+				5B7982A626A02265004A6473 /* CLTheme.swift */,
+			);
+			path = CLTheme;
+			sourceTree = "<group>";
+		};
 		5B80042A268192D6000E39AC /* Tools */ = {
 			isa = PBXGroup;
 			children = (
 				5BD4EB2D2681850000B5284F /* CLConst.swift */,
 				5BD4EB7F26818AF100B5284F /* Regex.swift */,
 				5B7982A026A014DE004A6473 /* CLCalculateHepler.swift */,
+				5B7982A826A022BF004A6473 /* CLUserDefaultStorage.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -912,6 +934,7 @@
 			children = (
 				5BD4EAF7268183E700B5284F /* Base */,
 				5B800435268194B1000E39AC /* CLHomePageController */,
+				5B7982A226A01EAE004A6473 /* CLDarkModeController */,
 				5B79829A26A00A0A004A6473 /* CLChangeFontSizeController */,
 				5B8004422681AD7E000E39AC /* CLChatContactController */,
 				5BC13527269E95B800D1CCB5 /* CLCustomTransitionController */,
@@ -1040,8 +1063,8 @@
 		5BAAC0052681B6AD00C2F609 /* CLChangeLanguageController */ = {
 			isa = PBXGroup;
 			children = (
-				5B08E44B2681E682001C271A /* CLBundleManager */,
 				5BAAC0062681B6BB00C2F609 /* CLChangeLanguageController.swift */,
+				5B08E44B2681E682001C271A /* CLLanguageManager */,
 			);
 			path = CLChangeLanguageController;
 			sourceTree = "<group>";
@@ -1319,7 +1342,6 @@
 				5BD4EB00268184AB00B5284F /* UIView+Extension.swift */,
 				5BD4EB01268184AB00B5284F /* UIImage+Extension.swift */,
 				5BD4EB02268184AB00B5284F /* UIControl+Extension.swift */,
-				5BD4EB03268184AB00B5284F /* CKDNamespace.swift */,
 				5BD4EB04268184AB00B5284F /* NSDecimalNumber+Extension.swift */,
 				5BD4EB05268184AB00B5284F /* URL+Extension.swift */,
 				5BD4EB06268184AB00B5284F /* AutoScale+Extension.swift */,
@@ -1837,6 +1859,7 @@
 				5B76931826841C70008BB92B /* CLChatRecordTipsView.swift in Sources */,
 				5BD4EB25268184AB00B5284F /* Data+Extension.swift in Sources */,
 				5BD0434526832D3F0054F2B4 /* CLBreakPointResumeItem.swift in Sources */,
+				5B7982A426A01ECA004A6473 /* CLDarkModeController.swift in Sources */,
 				5BD4EB662681872D00B5284F /* CLFlopPrizeView.swift in Sources */,
 				5B76932526841C70008BB92B /* CLChatEmojTextItem.swift in Sources */,
 				5B80042726818E05000E39AC /* CLNavigationController.swift in Sources */,
@@ -1868,6 +1891,7 @@
 				5BD0438A26832F980054F2B4 /* CLGifPlayer.swift in Sources */,
 				5BD4EB672681872D00B5284F /* CLPopupFlopController.swift in Sources */,
 				5BD4EB602681872D00B5284F /* CLPopupFoodPickerModel.swift in Sources */,
+				5B7982A726A02265004A6473 /* CLTheme.swift in Sources */,
 				5BD4EB16268184AB00B5284F /* Data+Gzip.swift in Sources */,
 				5BD0441926833B590054F2B4 /* CLDrawMarqueeView.swift in Sources */,
 				5BD4EB6F2681872D00B5284F /* CLDurationDataPickerView.swift in Sources */,
@@ -1880,9 +1904,9 @@
 				5BD4EB17268184AB00B5284F /* Date+Extension.swift in Sources */,
 				5BD043BD2683333E0054F2B4 /* CLWheelMenuController.swift in Sources */,
 				5BD0434726832D3F0054F2B4 /* CLBreakPointResumeCell.swift in Sources */,
-				5BD4EB1C268184AB00B5284F /* CKDNamespace.swift in Sources */,
 				5B58C57326846B34001736D7 /* CLMp3Encoder.m in Sources */,
 				5B800437268194CC000E39AC /* CLHomePageController.swift in Sources */,
+				5B7982A926A022BF004A6473 /* CLUserDefaultStorage.swift in Sources */,
 				5BD4EB622681872D00B5284F /* CLPopupFoodPickerView.swift in Sources */,
 				5B76932726841C70008BB92B /* CLChatVoiceCell.swift in Sources */,
 				5BD4EB692681872D00B5284F /* CLGradientLayerView.swift in Sources */,
