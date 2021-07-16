@@ -6,11 +6,7 @@
 //
 
 import UIKit
-import SnapKit
 
-//MARK: - JmoVxia---枚举
-extension CLTiledFlipRetroTransitionController {
-}
 //MARK: - JmoVxia---类-属性
 class CLTiledFlipRetroTransitionController: CLController {
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
