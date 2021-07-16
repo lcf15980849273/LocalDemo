@@ -1,5 +1,5 @@
 //
-//  CLCustomTransitionPushController.swift
+//  CLBubbleTransitionPresentController.swift
 //  CLDemo-Swift
 //
 //  Created by Chen JmoVxia on 2021/7/14.
@@ -9,7 +9,7 @@ import UIKit
 
 
 //MARK: - JmoVxia---类-属性
-class CLCustomTransitionPresentController: CLController {
+class CLBubbleTransitionPresentController: CLController {
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         transitioningDelegate = bubbleDelegate
@@ -46,7 +46,7 @@ class CLCustomTransitionPresentController: CLController {
     }()
 }
 //MARK: - JmoVxia---生命周期
-extension CLCustomTransitionPresentController {
+extension CLBubbleTransitionPresentController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
     }
@@ -70,7 +70,7 @@ extension CLCustomTransitionPresentController {
     }
 }
 //MARK: - JmoVxia---布局
-private extension CLCustomTransitionPresentController {
+private extension CLBubbleTransitionPresentController {
     func initUI() {
         transitioningDelegate = bubbleDelegate
         view.backgroundColor = .hex("#FF6666")
@@ -85,23 +85,23 @@ private extension CLCustomTransitionPresentController {
     }
 }
 //MARK: - JmoVxia---数据
-private extension CLCustomTransitionPresentController {
+private extension CLBubbleTransitionPresentController {
     func initData() {
     }
 }
 //MARK: - JmoVxia---override
-extension CLCustomTransitionPresentController {
+extension CLBubbleTransitionPresentController {
 }
 //MARK: - JmoVxia---objc
-@objc private extension CLCustomTransitionPresentController {
+@objc private extension CLBubbleTransitionPresentController {
     func buttonAction() {
         dismiss(animated: true)
         bubbleDelegate.interactiveTransition.finish()
     }
 }
 //MARK: - JmoVxia---私有方法
-private extension CLCustomTransitionPresentController {
+private extension CLBubbleTransitionPresentController {
 }
 //MARK: - JmoVxia---公共方法
-extension CLCustomTransitionPresentController {
+extension CLBubbleTransitionPresentController {
 }

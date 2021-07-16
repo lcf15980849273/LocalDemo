@@ -1,14 +1,18 @@
 //
-//  CLCustomTransitionController.swift
+//  CLTiledFlipRetroTransitionController.swift
 //  CLDemo-Swift
 //
-//  Created by Chen JmoVxia on 2021/7/14.
+//  Created by Chen JmoVxia on 2021/7/16.
 //
 
 import UIKit
+import SnapKit
 
+//MARK: - JmoVxia---枚举
+extension CLTiledFlipRetroTransitionController {
+}
 //MARK: - JmoVxia---类-属性
-class CLCustomTransitionController: CLController {
+class CLTiledFlipRetroTransitionController: CLController {
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
@@ -17,6 +21,11 @@ class CLCustomTransitionController: CLController {
     }
     deinit {
     }
+    private lazy var imageView: UIImageView = {
+        let view = UIImageView()
+        view.image = UIImage(named: "2")
+        return view
+    }()
     private lazy var bottomButton: UIButton = {
         let view = UIButton()
         view.backgroundColor = .hex("#FF6666")
@@ -30,21 +39,22 @@ class CLCustomTransitionController: CLController {
     }()
 }
 //MARK: - JmoVxia---生命周期
-extension CLCustomTransitionController {
+extension CLTiledFlipRetroTransitionController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        navigationController?.delegate = self
     }
     override func viewDidLoad() {
         super.viewDidLoad()
         initUI()
         makeConstraints()
-        initData()
     }
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
+        navigationController?.delegate = nil
     }
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
@@ -54,12 +64,15 @@ extension CLCustomTransitionController {
     }
 }
 //MARK: - JmoVxia---布局
-private extension CLCustomTransitionController {
+private extension CLTiledFlipRetroTransitionController {
     func initUI() {
-        modalPresentationStyle = .custom
+        view.addSubview(imageView)
         view.addSubview(bottomButton)
     }
     func makeConstraints() {
+        imageView.snp.makeConstraints { make in
+            make.edges.equalToSuperview()
+        }
         bottomButton.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
             make.bottom.equalTo(-safeAreaEdgeInsets.bottom - 40)
@@ -67,25 +80,19 @@ private extension CLCustomTransitionController {
         }
     }
 }
-//MARK: - JmoVxia---数据
-private extension CLCustomTransitionController {
-    func initData() {
-    }
-}
 //MARK: - JmoVxia---override
-extension CLCustomTransitionController {
+extension CLTiledFlipRetroTransitionController: UINavigationControllerDelegate {
+    func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationController.Operation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        if operation == .push {
+            return CLTiledFlipRetroTransition()
+        }
+        return nil
+    }
 }
 //MARK: - JmoVxia---objc
-@objc private extension CLCustomTransitionController {
+@objc private extension CLTiledFlipRetroTransitionController {
     func buttonAction() {
-        let controller = CLCustomTransitionPresentController()
-        controller.startCenter = self.bottomButton.center
-        present(controller, animated: true)
+        let controller = CLTiledFlipRetroPushTransitionController()
+        navigationController?.pushViewController(controller, animated: true)
     }
-}
-//MARK: - JmoVxia---私有方法
-private extension CLCustomTransitionController {
-}
-//MARK: - JmoVxia---公共方法
-extension CLCustomTransitionController {
 }
